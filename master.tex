@@ -1,7 +1,7 @@
 %% Latex template for PhD dissertation or MS thesis
-%% Electrical and Computer Engineering Department
+%% Linguistics Department
 %% Brigham Young University
-%% Last Modified:  March 2012
+%% Last Modified:  Feb 2016 (or later; use git to determine)
 
 \documentclass[12pt]{report}
 
@@ -15,20 +15,20 @@
     %isdissertation = true,            % Uncomment this if you're doing a PhD dissertation
     %etdsubmission = true,            % Uncomment this if you're compiling it for ETD submission
     singlepageabstract = true, % Comment this out if your abstract is multiple pages
-    singlepageacknowledgements = true, % Uncomment this if your Acknowledgements is multiple pages
+    %singlepageacknowledgements = true, % Uncomment this if your Acknowledgements is multiple pages
     %
     % Definitions of names needed in thesis/dissertation
-    deptname          = Department of Electrical and Computer Engineering,    %
-    collegename       = Ira A. Fulton College of\\Engineering and Technology, %
+    deptname          = Department of Humanities,    %
+    collegename       = Linguistics, %
     committeechairman = Firstname Mi. Lastname,                      %
     committeemembera  = Firstname Mi. Lastname,                         %
     committeememberb  = Firstname Mi. Lastname,                          %
     %committeememberc  = Firstname Mi. Lastname,                    % PhD Only
     %committeememberd  = Firstname Mi. Lastname,                     % PhD Only
-    graddate = April 2013,  % Leave commented for current month and year
-    %copyrightyear = 2012,      % Leave commented for current year
+    graddate = June 2016,  % Leave commented for current month and year
+    %copyrightyear = 2016,      % Leave commented for current year
     % uncomment the keywords for a dissertation
-    %keywords         = {elecromagnetic waves, crazy circuits}
+    keywords         = {Some linguistic keywords}
     %
     % Uncomment to shorten for proofreading purposes
     %noabstract = true,         % Don't show the abstract page
@@ -54,6 +54,7 @@
 \usepackage{graphicx}        % for figures
 \usepackage{subfigure}       % for figures with multiple subfigures
 \usepackage{setspace}        % so all the captions will be single spaced
+\usepackage{natbib}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  END: Include other \usepackage{} statements here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,7 +94,7 @@
                                         % UseOutlines: Bookmarks are visible.
                                         % UseThumbs: Thumbnails are visible.
                                         % FullScreen: Full-screen mode
-    pdftitle    = {Thesis Template},
+    pdftitle    = {Name of your thesis/dissertation.},
     pdfauthor   = {Firstname Lastname},
     pdfcreator  = {Firstname Lastname},
     pdfsubject  = {Firstname Lastname's Master's Thesis},
@@ -135,7 +136,7 @@
 \begin{document}
 
 % Define Title & Author
-\title{Brigham Young University Thesis Template}
+\title{Name of your thesis/dissertation.}
 \author{Firstname Lastname}
 
 % For displaying the BYU Thesis header
@@ -149,16 +150,18 @@
 % of the file should begin with \chapter{Chapter Title}, followed
 % by the text of the chapter.
 %  Note: the introduction is considered Chapter 1.
-\include{intro}
-\include{chapter2}
+\include{chapter1_intro}
+\include{chapter2_methods}
+\include{chapter3_results}
+\include{chapter4_conclusion}
 
 
 
 
 %%%%%%%%%%%%% begin Bibliography %%%%%%%%%%%%%%%%%
 \phantomsection %Forces a new section prior to setting the bibliography reference point
-\bibliographystyle{IEEEtran}
 \addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{plainnat}
 \bibliography{refs}
 
 % Bibliographies are best created and maintained using BibTeX
