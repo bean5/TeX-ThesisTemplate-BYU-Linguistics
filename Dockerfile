@@ -11,6 +11,6 @@ RUN apt-get install -qy --fix-missing python-pygments
 RUN apt-get install -qy --fix-missing texlive-science
 
 # Cleanup
-RUN apt-get -yq autoremove
-RUN apt-get clean -y
-RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apt-get -yq autoremove && \
+    apt-get clean -y && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
