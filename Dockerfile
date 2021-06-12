@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get upgrade -y
@@ -6,7 +6,7 @@ RUN apt-get update && apt-get upgrade -y
 # Install dependencies
 RUN apt-get install -qy --fix-missing texlive-full
 RUN apt-get install -qy --fix-missing python-pygments
-RUN apt-get install -qy --fix-missing texlive-math-extra
+RUN apt-get install -qy --fix-missing texlive-science
 RUN apt-get install -qy --fix-missing gnuplot
 RUN apt-get install -qy --fix-missing make
 
