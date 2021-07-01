@@ -18,7 +18,7 @@ It is highly advised that you use a Linux or Mac machine when building your docu
 
 1. Use Ubuntu 18.04
 2. Install gnumake: `sudo apt-get install -y make`
-3. Install docker following the instructions at <https://docs.docker.com/engine/installation/>
+3. Install docker following the instructions at <https://docs.docker.com/engine/install/>
 4. Install docker-compose following the instructions at <https://docs.docker.com/compose/>
 
 When using Ubuntu, there is no need to have VirtualBox installed. Docker is natively supported in Ubuntu.
