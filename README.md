@@ -16,7 +16,7 @@ It is highly advised that you use a Linux or Mac machine when building your docu
 
 ### Advised Linux-specific Pre-requisites Install Instructions
 
-1. Use Ubuntu 14.04
+1. Use Ubuntu 18.04
 2. Install gnumake: `sudo apt-get install -y make`
 3. Install docker following the instructions at <https://docs.docker.com/engine/installation/>
 4. Install docker-compose following the instructions at <https://docs.docker.com/compose/>
