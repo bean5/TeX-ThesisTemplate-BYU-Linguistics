@@ -25,7 +25,7 @@ When using Ubuntu, there is no need to have VirtualBox installed. Docker is nati
 
 ## Use Instructions
 
-1. If you have make docker and make installed, you can simply run `make`. If you don't have docker, but have LaTeX and make, you can run `make project.pdf`. **Note**: The first time you run this, a docker will be built, which contains various LaTeX packages. This may take hours to build for the first time. After that, it will be superfast as long as you haven't updated the `Dockerfile` or removed the docker that was built.
+1. If you have make docker, you can simply run `docker-compose run build`. If you don't have docker, but have LaTeX and make, you can run `cd whiteppaer; make project.pdf`. **Note**: The first time you run this, a docker will be built, which contains various LaTeX packages. This may take hours to build for the first time. After that, it will be superfast as long as you haven't updated the `Dockerfile` or removed the docker that was built.
 2. Once you have built the document, you can run `make publish`. This will run the make target that copies `project.pdf` and names it to match your thesis title (see the Makefile).
 3. Since the Abstract and Acknowledgements need to be single spaced (and I couldn't figure out how to force it to skip even pages), you'll need to uncomment the `\afterpage{\cleardoublepage}` command in the abstract.tex and acknowledgements.tex files, if they are more than one page. If they're not then you'll need to be sure to have the singlepageabstract and/or singlepageacknowledgements options set to true, or else the top margin will not be correct.
 
