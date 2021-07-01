@@ -6,10 +6,12 @@ services:
     command: make master.pdf
     working_dir: /main
     volumes:
-      - './:/main'
+      - './whitepaper/:/main'
+      - './output/:/output'
   shell:
     image: build
     command: bash
     working_dir: /main
     volumes:
-      - './:/main'
+      - './whitepaper/:/main'
+      - './output/:/output'
