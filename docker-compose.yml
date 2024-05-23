@@ -1,17 +1,15 @@
-version: '3'
-
 services:
   build:
     build: .
     command: make master.pdf
     working_dir: /main
     volumes:
-      - './whitepaper/:/main'
-      - './output/:/output'
+      - './whitepaper:/main'
+      - './output:/output'
   shell:
     image: build
     command: bash
     working_dir: /main
     volumes:
-      - './whitepaper/:/main'
-      - './output/:/output'
+      - './whitepaper:/main'
+      - './output:/output'
